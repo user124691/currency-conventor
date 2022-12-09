@@ -1,54 +1,59 @@
-* {
+.App {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(to right, rgb(26, 248, 26), rgb(60, 60, 255));
-}
-
-.calculator-grid > button {
-    outline: none;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    background-color:rgba(255, 255, 255, 0.70);
-    font-size: 25px;
-}
-
-.calculator-grid > button:hover,
-.calculator-grid > button:focus {
-    background-color:rgba(255, 255, 255, 0.9);
-}
-
-.calculator-grid {
-    display: grid;
-    margin-top: 30px;
-    justify-content: center;
-    grid-template-columns: repeat(4, 85px);
-    grid-template-rows: minmax(85px, auto) repeat(6, 80px);
-}
-
-.span-two{
-    grid-column: span 2;
-}
-
-.output {
+.header {
+    background: rgb(8, 11, 8);
+    margin: -10px -10px -10px -10px;
+    width: 110%;
+    height: 70px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    grid-column: 1 / -1;
-    background-color:rgba(0, 0, 0, 0.65);
-    word-wrap:break-word;
-    word-break:break-all;
+    align-items: center;
 }
 
-.output-previous{
-    color:rgba(255, 255, 255, 0.5);
-    font-size: 22px;
+.currensyBoxHeader {
+    color: rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    width: auto;
+    height: 20px;
+    position: relative;
+    left: 50px;
+    margin: 0 25px 0 25px;
+}
+.nameHeader {
+    color: rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-bottom: 16.5px;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 
-.output-current{
-    color:rgba(255, 255, 255);
-    font-size: 27px;
+#convertButton {
+    padding: 10.2px;
+    margin-left: 5px;
+    border: 2px dashed black;
+    background:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#convertButton:hover {
+    background: rgba(139, 133, 133, 0.752);
+}
+
+#changeArrow {
+    font-size: 30px;
+    margin: 6px 20px 6.5px 20px;
+    padding: 0px 7px 0px 7px;
+    background: white;
+    border: none;
 }

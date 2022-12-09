@@ -1,0 +1,8 @@
+.currInputStyle {
+    padding: 10px;
+    margin-left: 2px;
+    border: 1.7px dashed black;
+    font-size: 17px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
