@@ -9,10 +9,6 @@ function App(){
   const [secondCurr, setSecondCurr] = useState("UAH")
   const [secondInp, setSecondInp] = useState(0)
 
-  async function headerUpdate(headerCurr, setHeaderCurr){
-    
-  }
-
   function calculate(firstCurr, firstInp, secondCurr, secondInp){
     if(firstCurr === secondCurr){
       return
